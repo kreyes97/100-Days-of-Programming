@@ -38,8 +38,8 @@ def main():
     turtle.penup()
     turtle.goto((-480, -480))
 
-    for j in range(-480, 480, 20):
-        for i in range(-480, 480, 20):
+    for j in range(-480, 500, 20):
+        for i in range(-480, 500, 20):
             colors = color_generator()
             turtle.color(colors)
             turtle.stamp()
