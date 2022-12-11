@@ -69,7 +69,7 @@ def main():
         for i in range(0, len(turtles[0])):
             move_turtle(turtles[0][i])
         for i in range(0, len(turtles[0])):
-            if turtles[0][i].pos()[0] >= 200:
+            if turtles[0][i].pos()[0] >= 195:
                 winners.append(turtles[1][turtles[0][i]])
 
         if len(winners) > 0:
@@ -78,13 +78,13 @@ def main():
             continue
 
     if user_selection in winners and len(winners) == 1:
-        print(f"You win!The {winners[0]} turtle is the winner!")
+        print(f"You win! The {winners[0]} turtle is the winner!")
     elif user_selection in winners and len(winners) != 1:
-        print(f"Tie!The {', '.join(winners)} turtles are the winners!")
+        print(f"Tie! The {', '.join(winners)} turtles are the winners!")
     elif user_selection not in winners and len(winners) != 1:
-        print(f"You lose!The {', '.join(winners)} turtles are the winners!")
+        print(f"You lose! The {', '.join(winners)} turtles are the winners!")
     else:
-        print(f"You lose!The {winners[0]} turtle is the winner!")
+        print(f"You lose! The {winners[0]} turtle is the winner!")
 
     screen.exitonclick()
 
