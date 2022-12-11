@@ -82,7 +82,7 @@ def main():
     elif user_selection in winners and len(winners) != 1:
         print(f"Tie!The {', '.join(winners)} turtles are the winners!")
     elif user_selection not in winners and len(winners) != 1:
-        print(f"You lose!The {', '.join(winners)} turtles are the winner!")
+        print(f"You lose!The {', '.join(winners)} turtles are the winners!")
     else:
         print(f"You lose!The {winners[0]} turtle is the winner!")
 
